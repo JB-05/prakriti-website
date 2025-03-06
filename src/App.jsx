@@ -7,10 +7,23 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ 
+      flexGrow: 1,
+      width: '100%',
+      overflowX: 'hidden',
+      position: 'relative'
+    }}>
       <Navbar />
       <Hero />
-      <Container maxWidth="lg" sx={{ mt: 8 }}>
+      <Container 
+        maxWidth={false} 
+        sx={{ 
+          mt: 8,
+          px: { xs: 2, sm: 4, md: 6 },
+          width: '100%',
+          overflowX: 'hidden'
+        }}
+      >
         <Classes />
       </Container>
       <AboutUs />
